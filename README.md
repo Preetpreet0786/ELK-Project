@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 https://docs.google.com/document/d/1ofXHSYubN2_DjEIs62ogGSTlYM37t18rr8ZrDsvEnH4/edit
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook-yaml file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
@@ -35,7 +35,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | WEB1     |          | 10.0.0.7   | Linux            |
 | WEB2     |          | 10.0.0.8   | Linux            |
 | ELK      |          | 10.1.0.4   | Linux            |
@@ -46,23 +46,29 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 From my home IP address 141.168.83.125
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by Jumpbox VM
+Which machine did you allow to access your ELK VM? What was its IP address?
+Jumpbox VM can access ELK VM and its IP address is 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
+| Jump Box | no                  | 141.168.83.125       |
+|  Web1    | no                  | 10.0.0.7             |
+|  Web2    | no                  | 10.0.0.8             |
+|  ELK.    | no                  | 10.0.0.4             |
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous 
+What is the main advantage of automating configuration with Ansible?
+The main advantages of automating configuration with ansible are 
+1.Open Source tool
+2.Easy to use
+3.Easily configure multiple servers
+4.Enables automation
 
-The playbook implements the following tasks:
+Powerful & FlexibleThe playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ...
 - ...
