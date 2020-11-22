@@ -14,7 +14,7 @@ Enter the playbook file
   remote_user: sysadmin
   become: true
   tasks:
-    # Use apt module
+    #Use apt module
     - name: Install docker.io
       apt:
         update_cache: yes
@@ -22,20 +22,20 @@ Enter the playbook file
         name: docker.io
         state: present
 
-      # Use apt module
+      #Use apt module
     - name: Install python3-pip
       apt:
         force_apt_get: yes
         name: python3-pip
         state: present
 
-      # Use pip module (It will default to pip3)
+      #Use pip module (It will default to pip3)
     - name: Install Docker module
       pip:
         name: docker
         state: present
 
-       # Use sysctl module
+       #Use sysctl module
     - name: Use more memory
       sysctl:
         name: vm.max_map_count
@@ -43,14 +43,14 @@ Enter the playbook file
         state: present
         reload: yes
 
-      # Use docker_container module
+      #Use docker_container module
     - name: download and launch a docker elk container
       docker_container:
         name: elk
         image: sebp/elk:761
         state: started
         restart_policy: always
-        # Please list the ports that ELK runs on
+        #Please list the ports that ELK runs on
         published_ports:
           -  5601:5601
           -  9200:9200
@@ -59,7 +59,7 @@ Enter the playbook file
     - name: Enable docker service 
       systemd: 
         name: docker
-        enabled: yes  
+        enabled: yes 
 
 This document contains the following details:
 - Description of the Topologu
