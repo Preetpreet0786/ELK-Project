@@ -135,7 +135,7 @@ These are steps for ELK installation
 9.Launch browser and access KIBANA site.
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+https://docs.google.com/document/d/127UdMfgGbW9Er7AXLyoqA0j3ZWDK0IeJFOI6ltUPEpc/edit?usp=sharing
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
