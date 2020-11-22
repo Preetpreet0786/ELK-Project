@@ -89,7 +89,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | WEB1     |  DVWA    | 10.0.0.7   | Linux            |
-| WEB2     |  DVWA    | 10.0.0.8   | Linux            |
+| WEB2     | Server   | 10.0.0.8   | Linux            |
 | ELK      |  ELK     | 10.1.0.4   | Linux            |
 
 ### Access Policies
