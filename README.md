@@ -7,7 +7,6 @@ https://docs.google.com/document/d/1mVh8iOm8a_TyygRS1GtFgOjpHQHIGL3_K2tBo7jtLuM/
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook-yaml file may be used to install only certain pieces of it, such as Filebeat.
 
 Enter the playbook file
-
 ---
 - name: Configure Elk VM with Docker
   hosts: ELKserver
@@ -22,7 +21,7 @@ Enter the playbook file
         name: docker.io
         state: present
 
-      #Use apt module
+     #Use apt module
     - name: Install python3-pip
       apt:
         force_apt_get: yes
@@ -59,7 +58,7 @@ Enter the playbook file
     - name: Enable docker service 
       systemd: 
         name: docker
-        enabled: yes 
+        enabled: yes
 
 This document contains the following details:
 - Description of the Topologu
