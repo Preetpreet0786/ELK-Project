@@ -70,9 +70,17 @@ The main advantages of automating configuration with ansible are
 
 Powerful & FlexibleThe playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+These are steps for ELK installation 
 
+1.Create New Vnet and create peer network connection between 2 Vnet and new VM called ELK server
+2.Configure Inbound and outbound security rules
+3.Download and configure Docker
+4.Configure elk-playbook.yml
+5.Configure Host file
+6.Execute playbook
+7.Launch Container
+8.Attach to Container
+9.Launch browser and access KIBANA site.
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
