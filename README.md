@@ -167,4 +167,5 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 we can do it by using nano to edity the /etc/ansible/host file to add webserver/elkserver ip addresses and enter the IP address of the specific machine you want the the Elk server on to work 
 Which URL do you navigate to in order to check that the ELK server is running?
 http://104.43.13.170:5601/app/kibana
+
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
