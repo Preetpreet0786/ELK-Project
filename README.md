@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 https://docs.google.com/document/d/1mVh8iOm8a_TyygRS1GtFgOjpHQHIGL3_K2tBo7jtLuM/edit?usp=sharing
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook-yaml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook-yml file may be used to install only certain pieces of it, such as Filebeat.
 
 Enter the playbook file
 ---
@@ -89,8 +89,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | WEB1     |  DVWA    | 10.0.0.7   | Linux            |
-| WEB2     |          | 10.0.0.8   | Linux            |
-| ELK      |          | 10.1.0.4   | Linux            |
+| WEB2     |  DVWA    | 10.0.0.8   | Linux            |
+| ELK      |  ELK     | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
@@ -160,9 +160,11 @@ SSH into the control node and follow the steps below:
 - Update the host_____ file to include...
 - Run the playbook, and navigate to  navigate to http://[Public IP of ELK server VM 104.43.13.170:5601/app/kibana to check that the installation worked as expected. to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+Answer the following questions to fill in the blanks:_
+Which file is the playbook? Where do you copy it?
 
+Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+we can do it by using nano to edity the /etc/ansible/host file to add webserver/elkserver ip addresses and enter the IP address of the specific machine you want the the Elk server on to work 
+Which URL do you navigate to in order to check that the ELK server is running?
+http://104.43.13.170:5601/app/kibana
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
