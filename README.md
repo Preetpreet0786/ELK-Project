@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-https://docs.google.com/document/d/1ofXHSYubN2_DjEIs62ogGSTlYM37t18rr8ZrDsvEnH4/edit
+https://docs.google.com/document/d/1mVh8iOm8a_TyygRS1GtFgOjpHQHIGL3_K2tBo7jtLuM/edit?usp=sharing
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook-yaml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -36,7 +36,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| WEB1     |          | 10.0.0.7   | Linux            |
+| WEB1     |  DVWA    | 10.0.0.7   | Linux            |
 | WEB2     |          | 10.0.0.8   | Linux            |
 | ELK      |          | 10.1.0.4   | Linux            |
 
