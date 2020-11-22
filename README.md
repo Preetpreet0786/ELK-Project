@@ -87,21 +87,26 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
-
+ List the IP addresses of the machines you are monitoring_
+ Web1 10.0.0.7 
+ Web2 10.0.0.8
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+ Specify which Beats you successfully installed
+ Filebeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+Filebeat monitors the log files or locations that you specify, which we use to see what changes or messages the log files have received such as kill commands.
 
 ### Using the Playbook
+
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the filebeat-config.yml  file to to /etc/ansible/roles/files/
+- Update the host_____ file to include...
+- Run the playbook, and navigate to  navigate to http://[Public IP of ELK server VM 104.43.13.170:5601/app/kibana to check that the installation worked as expected. to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
