@@ -59,7 +59,7 @@ Enter the playbook file
     - name: Enable docker service 
       systemd: 
         name: docker
-        enabled: yes   
+        enabled: yes  
 
 This document contains the following details:
 - Description of the Topologu
