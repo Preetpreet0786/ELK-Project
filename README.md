@@ -77,7 +77,7 @@ Load balancing ensures that the application will be highly available, in additio
 What aspect of security do load balancers protect? What is the advantage of a jump box?_
 The load balancers protect organizations against DDos (denial of service attack ).The advantage of jump box it prevents all azure VM to expose to the public and we  use this jump box VM to connect to other azure VM using dynamic IP
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _log____ and system _performanc____.
 What does Filebeat watch for?
 The Filebeat monitor the logfiles ,collect log events and forward them to elasticsearch or logstash for indexing 
 What does Metricbeat record?
